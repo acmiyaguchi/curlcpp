@@ -10,6 +10,8 @@ ELSE()
     # Setting up project
     project(CURLCPP)
 
+    # Needed to link static library to dynamic library
+    set(CMAKE_POSITION_INDEPENDENT_CODE ON) 
 
     # Add MacPorts
     if(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
